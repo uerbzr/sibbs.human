@@ -3,6 +3,7 @@ import { FetchData } from "./components/FetchData";
 import { FetchPeopleData } from "./components/FetchPeopleData";
 import { AuthorsData } from "./components/AuthorsData";
 import { Home } from "./components/Home";
+import { NameForm } from "./components/NameForm"
 
 const AppRoutes = [
   {
@@ -24,6 +25,10 @@ const AppRoutes = [
     {
         path: '/authors',
         element: <AuthorsData />
+    },
+    {
+        path: '/addauthor',
+        element: <NameForm />
     }
 ];
 
