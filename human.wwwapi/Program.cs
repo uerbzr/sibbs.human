@@ -2,9 +2,10 @@ using human.models;
 using human.repository;
 using human.wwwapi;
 using human.wwwapi.EndPoints;
+using human.wwwapi.Misc;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.ConfigureOptions<SmsProviderOptionsSetup>();
 // Add services to the container.
 
 builder.Services.AddControllers();

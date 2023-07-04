@@ -7,8 +7,6 @@ namespace human.repository
 {
     public class DatabaseRepository<T> : IDatabaseRepository<T> where T : class
     {
-
-
         private DatabaseContext _db;
         private DbSet<T> _table = null;
         public DatabaseRepository()
